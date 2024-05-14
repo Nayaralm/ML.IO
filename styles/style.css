@@ -1,193 +1,253 @@
+/* Importando fontes do Google Fonts */
+
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Open+Sans&family=Poppins:wght@200&display=swap");
 
+/* Estilos gerais */
+
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: var(--font-primaria);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+/* Definição de variáveis */
 
 :root {
-   --cor-primaria: #141416;
-   --cor-secundaria: #f6f6f6;
-   --cor-terciaria: #fd6262;
-   --cor-hover: #272727;
-
-   --font-primaria: "Open Sans", sans-serif;
-   --font-titulo: "Poppins", sans-serif;
-   --font-logo: "Barlow", sans-serif;
+    --cor-primaria: #141416;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #fd6262;
+    --cor-hover: #272727;
+    --font-primaria: "Open Sans", sans-serif;
+    --font-titulo: "Poppins", sans-serif;
+    --font-logo: "Barlow", sans-serif;
 }
+
+
+/* Estilos do body */
 
 body {
-   height: 100vh;
-   box-sizing: border-box;
-   background-color: #141416;
-   padding: 0 1% 0 1%;
+    min-height: 100vh;
+    background-color: var(--cor-primaria);
+    padding: 0 1%;
+    font-family: var(--font-primaria);
+    color: var(--cor-secundaria);
 }
 
+
+/* Estilos do cabeçalho */
+
 .cabecalho-container {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
 }
 
 .text-logo {
-   font-family: var(--font-logo);
-   font-size: 64px;
-   font-weight: 500;
-   color: #f6f6f6;
-   text-decoration: none;
+    font-family: var(--font-logo);
+    font-size: 64px;
+    font-weight: 500;
+    color: var(--cor-secundaria);
+    text-decoration: none;
 }
 
 .cabecalho-link {
-   font-size: 16px;
-   text-decoration: none;
-   color: #f6f6f6;
-   margin: 0 16px 0 16px;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    margin: 0 16px;
 }
 
 #cabecalho-link-cadastro {
-   border: 1px solid #f6f6f6;
-   border-radius: 5px;
-   padding: 12px 24px 12px 24px;
-   text-decoration: none;
-   color: #f6f6f6;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 5px;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
 }
 
 #cabecalho-link-cadastro:hover {
-   border: 1px solid #889ce7;
-   background-color: #889ce7;
-   color: #141416;
+    border-color: var(--cor-hover);
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
 }
 
+
+/* Estilos da seção de apresentação */
+
 .apresentacao {
-   display: flex;
-   flex-direction: column;
-   align-content: flex-start;
-   align-items: flex-start;
-   padding: 0 1% 0 1%;
-   margin: 32px 32px 88px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5%;
+    margin-bottom: 5%;
+    background-color: var(--cor-primaria);
 }
 
 .title {
-   font-family: var(--font-titulo);
-   font-size: 64px;
-   color: #f6f6f6;
-   margin-bottom: 16px;
-   font-weight: 800;
+    font-family: var(--font-titulo);
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: var(--cor-secundaria);
 }
 
 .subtitle {
-   font-size: 32px;
-   font-weight: 500;
-   color: #f6f6f6;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--cor-secundaria);
+    margin-bottom: 16px;
 }
 
 .text {
-   font-size: 24px;
-   font-weight: 500;
-   color: #f6f6f6;
-   /* margin-top: 16px;
-   margin-bottom: 16px; */
-   margin: 16px 0;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
 }
 
 .apresentacao-botao {
-   border: 1px solid #fd6262;
-   border-radius: 5px;
-   padding: 12px 24px 12px 24px;
-   text-decoration: none;
-   background-color: #fd6262;
-   color: #141416;
-   margin-top: 16px;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 5px;
+    padding: 12px 24px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .apresentacao-botao:hover {
-   border: 1px solid #f6f6f6;
-   background-color: #141416;
-   color: #f6f6f6;
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
 }
 
+
+/* Estilos das seções de conteúdo */
+
 .about {
-   margin: 32px 32px;
-   border: 1px solid #333;
-   display: flex;
+    display: flex;
+    margin: 0 5%;
+    padding: 5%;
 }
 
 .about-left {
-   width: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   border-right: 1px solid #333;
-   padding: 5%;
-   background-image: url(../assets/background-2-40-opacidade.png);
-   background-size: cover;
-   background-repeat: no-repeat;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5%;
 }
 
 .about-right {
-   width: 50%;
-   height: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: auto;
-   padding: 1%;
+    width: 50%;
 }
 
 .title-about {
-   font-family: var(--font-titulo);
-   color: #fff;
-   font-size: 32px;
-   margin-bottom: 24px;
-   font-weight: 800;
+    font-family: var(--font-titulo);
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--cor-secundaria);
+    margin-bottom: 24px;
 }
 
 .text-about {
-   color: #adadad;
-   text-align: left;
-   width: 70%;
+    text-align: left;
+    color: #adadad;
+    width: 100%;
 }
+
+.lista-aplicacoes,
+.lista-projeções {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+
+/* Estilos dos cartões */
 
 .cards {
-   display: flex;
-   flex-direction: column;
-   margin: 32px auto;
-}
-
-.cards-top {
-   display: flex;
-}
-
-.cards-bottom {
-   display: flex;
-   margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
 }
 
 .card {
-   border: 1px solid #333;
-   box-shadow: 0px 0px 10px #141416;
-   border-radius: 10px;
-   width: 240px;
-   padding: 4%;
-   margin: 16px;
+    border: 1px solid var(--cor-primaria);
+    box-shadow: 0px 0px 10px var(--cor-primaria);
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 16px;
 }
 
 .card-title {
-   color: #889ce7;
-   font-size: 16px;
-   margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cor-terciaria);
+    margin-bottom: 8px;
 }
 
 .card-descricao {
-   color: #8f8f8f;
-   font-size: 14px;
+    font-size: 14px;
+    color: #8f8f8f;
 }
 
 .space {
-   padding: 1%;
+    padding: 1%;
+}
+
+
+/* Estilos para a nova seção "Aplicações de Machine Learning" */
+
+.lista-aplicacoes,
+.lista-projeções {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+
+/* Estilização dos links no rodapé */
+
+.footer-link {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: var(--cor-hover);
+}
+
+
+/* Estilos para listas */
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+
+/* Ajustes de margens e espaçamentos */
+
+.about-left,
+.about-right {
+    padding: 0 5%;
+}
+
+.cards {
+    margin-top: 32px;
+}
+
+.card {
+    margin-bottom: 16px;
+}
+
+
+/* Estilos para elementos de formulário */
+
+
+/* Adicione os estilos conforme necessário */
+
+.space {
+    padding: 1%;
 }
