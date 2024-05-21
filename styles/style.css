@@ -1,17 +1,10 @@
-/* Importando fontes do Google Fonts */
-
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Open+Sans&family=Poppins:wght@200&display=swap");
-
-/* Estilos gerais */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-primaria);
 }
-
-
-/* Definição de variáveis */
 
 :root {
     --cor-primaria: #141416;
@@ -23,22 +16,17 @@
     --font-logo: "Barlow", sans-serif;
 }
 
-
-/* Estilos do body */
-
 body {
-    min-height: 100vh;
-    background-color: var(--cor-primaria);
-    padding: 0 1%;
-    font-family: var(--font-primaria);
-    color: var(--cor-secundaria);
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #141416;
+    padding: 0 1% 0 1%;
+    color: #f6f6f6;
 }
-
-
-/* Estilos do cabeçalho */
 
 .cabecalho-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
@@ -48,148 +36,155 @@ body {
     font-family: var(--font-logo);
     font-size: 64px;
     font-weight: 500;
-    color: var(--cor-secundaria);
+    color: #f6f6f6;
     text-decoration: none;
 }
 
 .cabecalho-link {
     font-size: 16px;
     text-decoration: none;
-    color: var(--cor-secundaria);
-    margin: 0 16px;
+    color: #f6f6f6;
+    margin: 0 16px 0 16px;
 }
 
 #cabecalho-link-cadastro {
-    border: 1px solid var(--cor-secundaria);
+    border: 1px solid #f6f6f6;
     border-radius: 5px;
-    padding: 12px 24px;
+    padding: 12px 24px 12px 24px;
     text-decoration: none;
-    color: var(--cor-secundaria);
+    color: #f6f6f6;
 }
 
 #cabecalho-link-cadastro:hover {
-    border-color: var(--cor-hover);
-    background-color: var(--cor-hover);
-    color: var(--cor-primaria);
+    border: 1px solid #889ce7;
+    background-color: #889ce7;
+    color: #141416;
 }
-
-
-/* Estilos da seção de apresentação */
 
 .apresentacao {
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
     align-items: flex-start;
-    padding: 5%;
-    margin-bottom: 5%;
-    background-color: var(--cor-primaria);
+    padding: 0 1% 0 1%;
+    margin: 32px 32px 88px 32px;
 }
 
 .title {
     font-family: var(--font-titulo);
     font-size: 64px;
-    font-weight: 800;
+    color: #f6f6f6;
     margin-bottom: 16px;
-    color: var(--cor-secundaria);
+    font-weight: 800;
 }
 
 .subtitle {
     font-size: 32px;
     font-weight: 500;
-    color: var(--cor-secundaria);
-    margin-bottom: 16px;
+    color: #f6f6f6;
 }
 
 .text {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
-    margin-bottom: 16px;
+    color: #f6f6f6;
+    /* margin-top: 16px;
+   margin-bottom: 16px; */
+    margin: 16px 0;
 }
 
 .apresentacao-botao {
-    border: 1px solid var(--cor-terciaria);
+    border: 1px solid #fd6262;
     border-radius: 5px;
-    padding: 12px 24px;
-    background-color: var(--cor-terciaria);
-    color: var(--cor-primaria);
+    padding: 12px 24px 12px 24px;
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
+    background-color: #fd6262;
+    color: #141416;
+    margin-top: 16px;
 }
 
 .apresentacao-botao:hover {
-    background-color: var(--cor-hover);
-    color: var(--cor-primaria);
+    border: 1px solid #f6f6f6;
+    background-color: #141416;
+    color: #f6f6f6;
 }
 
-
-/* Estilos das seções de conteúdo */
-
 .about {
+    margin: 32px 32px;
+    border: 1px solid #333;
     display: flex;
-    margin: 0 5%;
-    padding: 5%;
 }
 
 .about-left {
     width: 50%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    padding-right: 5%;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid #333;
+    padding: 5%;
+    background-image: url(../assets/background-2-40-opacidade.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .about-right {
     width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1%;
 }
 
 .title-about {
     font-family: var(--font-titulo);
+    color: #fff;
     font-size: 32px;
-    font-weight: 800;
-    color: var(--cor-secundaria);
     margin-bottom: 24px;
+    font-weight: 800;
 }
 
 .text-about {
-    text-align: left;
     color: #adadad;
-    width: 100%;
+    text-align: left;
+    width: 70%;
 }
-
-.lista-aplicacoes,
-.lista-projeções {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-
-/* Estilos dos cartões */
 
 .cards {
     display: flex;
     flex-direction: column;
-    margin-top: 32px;
+    margin: 32px auto;
+}
+
+.cards-top {
+    display: flex;
+}
+
+.cards-bottom {
+    display: flex;
+    margin-top: 8px;
 }
 
 .card {
-    border: 1px solid var(--cor-primaria);
-    box-shadow: 0px 0px 10px var(--cor-primaria);
+    border: 1px solid #333;
+    box-shadow: 0px 0px 10px #141416;
     border-radius: 10px;
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 16px;
+    width: 240px;
+    padding: 4%;
+    margin: 16px;
 }
 
 .card-title {
+    color: #889ce7;
     font-size: 16px;
-    font-weight: 500;
-    color: var(--cor-terciaria);
     margin-bottom: 8px;
 }
 
 .card-descricao {
-    font-size: 14px;
     color: #8f8f8f;
+    font-size: 14px;
 }
 
 .space {
@@ -197,57 +192,55 @@ body {
 }
 
 
-/* Estilos para a nova seção "Aplicações de Machine Learning" */
+/* Estilos para a seção de Aplicações */
 
-.lista-aplicacoes,
-.lista-projeções {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-
-/* Estilização dos links no rodapé */
-
-.footer-link {
+.aplicacoes {
+    padding: 50px 0;
+    background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
-    text-decoration: none;
-    transition: color 0.3s;
+    text-align: center;
 }
 
-.footer-link:hover {
-    color: var(--cor-hover);
+.aplicacoes h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--cor-terciaria);
 }
 
-
-/* Estilos para listas */
-
-ul {
+.aplicacoes .list-about {
     list-style: none;
-    padding-left: 20px;
+    padding: 0;
+    text-align: left;
+}
+
+.aplicacoes .list-about li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 
-/* Ajustes de margens e espaçamentos */
+/* Estilos para a seção de Projeções */
 
-.about-left,
-.about-right {
-    padding: 0 5%;
+.projeções {
+    padding: 50px 0;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    text-align: center;
 }
 
-.cards {
-    margin-top: 32px;
+.projeções h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--cor-terciaria);
 }
 
-.card {
-    margin-bottom: 16px;
+.projeções .list-about {
+    list-style: none;
+    padding: 0;
 }
 
-
-/* Estilos para elementos de formulário */
-
-
-/* Adicione os estilos conforme necessário */
-
-.space {
-    padding: 1%;
+.projeções .list-about li {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
