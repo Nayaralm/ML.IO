@@ -7,14 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ML.IO</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-6dXWlMxkP3uVs6HrLV5bSZgWt5Frd/Jz4UvEb8PxumvNULq+gvjPTSmvOhH9vDG5uKtZfAiq6A9Cv44mRq3bPg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
 </head>
 
 <body>
     <header class="cabecalho-container" id="inicio">
         <div class="cabecalho-logo">
-            <a class="text-logo" href="#" title="Página Inicial da ML.IO">ML.IO</a>
+            <a class="text-logo" href="#" title="Página Inicial da ML.IO" aria-label="Página Inicial da ML.IO">
+                ML.IO <i class="fas fa-home"></i>
+            </a>
         </div>
-        <nav class="cabecalho-navbar" title="Navegação">
+        <nav class="cabecalho-navbar" title="Navegação" aria-label="Navegação principal">
             <a class="cabecalho-link" href="#inicio" title="Ir para o início da página">
                 <span style="color: #fd6262">
                     Início
@@ -35,7 +40,7 @@
         <p class="text">
             Esse conceito está mais presente na sua vida do que você pode imaginar, Aqui vamos te mostrar
         </p>
-        <a class="apresentacao-botao" href="#sobre" title="Saiba mais sobre Machine Learning">Saiba Mais</a>
+        <a class="apresentacao-botao" href="#sobre" title="Saiba mais sobre Machine Learning" aria-label="Saiba mais sobre Machine Learning">Saiba Mais</a>
     </section>
 
     <main class="about" id="sobre">
@@ -91,6 +96,46 @@
         </ul>
     </section>
 
+    <section class="exemplos" id="exemplos">
+        <h1 class="title-about">Exemplos de Machine Learning</h1>
+        <div class="example">
+            <h2 class="example-title">Reconhecimento Facial</h2>
+            <div class="example-content">
+                <p class="example-text">O reconhecimento facial utiliza algoritmos de Machine Learning para identificar e verificar a identidade de indivíduos em fotos e vídeos. Esse tipo de tecnologia é usado em segurança, autenticação de dispositivos e redes sociais.</p>
+            </div>
+        </div>
+        <div class="example">
+            <h2 class="example-title">Detecção de Fraudes</h2>
+            <div class="example-content">
+                <p class="example-text">Os sistemas de detecção de fraudes analisam transações financeiras em tempo real, identificando padrões suspeitos e comportamentos anômalos que possam indicar atividades fraudulentas. Bancos e instituições financeiras utilizam esses sistemas
+                    para proteger os clientes e reduzir perdas.</p>
+            </div>
+        </div>
+        <div class="example">
+            <h2 class="example-title">Diagnóstico Médico</h2>
+            <div class="example-content">
+                <p class="example-text">Modelos de Machine Learning são utilizados para analisar exames médicos e auxiliar no diagnóstico de doenças. Esses sistemas podem detectar padrões e anomalias em imagens de raios-X, ressonâncias magnéticas e outros exames, proporcionando
+                    suporte adicional aos profissionais de saúde.</p>
+            </div>
+        </div>
+        <div class="example">
+            <h2 class="example-title">Assistentes Virtuais</h2>
+            <div class="example-content">
+                <p class="example-text">Assistentes virtuais como Siri, Alexa e Google Assistant utilizam Machine Learning para entender e responder a comandos de voz dos usuários. Eles aprendem continuamente com as interações, melhorando sua capacidade de compreender e executar
+                    tarefas.
+                </p>
+            </div>
+        </div>
+        <div class="example">
+            <h2 class="example-title">Carros Autônomos</h2>
+            <div class="example-content">
+                <p class="example-text">Veículos autônomos utilizam algoritmos de Machine Learning para processar dados de sensores e câmeras, permitindo que eles naveguem e tomem decisões em tempo real. Esses sistemas são projetados para melhorar a segurança e eficiência no
+                    trânsito.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <section class="projeções" id="projecoes">
         <h1 class="title-about">Projeções Futuras de Machine Learning</h1>
         <p class="text-about">
@@ -99,15 +144,21 @@
         <ul class="list-about">
             <li>Integração com Tecnologias Emergentes como IoT e AR</li>
             <li>Impacto Social e Econômico nos Mercados de Trabalho</li>
-            <li>Desenvolvimento de Soluções para Desafios Ambientais</li>
-            <li>Questões Éticas e de Privacidade</li>
-            <li>Inovações em Setores como Educação e Segurança</li>
+            <li>Desenvolvimento de Soluções para Desafios Ambientais
+                <li>Questões Éticas e de Privacidade</li>
+                <li>Inovações em Setores como Educação e Segurança</li>
         </ul>
     </section>
 
+    <section class="video-section" aria-label="Vídeo de introdução ao Machine Learning">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/f_uwKZIAeM0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Vídeo de introdução ao Machine Learning"></iframe>
+        </div>
+    </section>
+
     <footer class="space">
-        <p>Siga-nos nas redes sociais: <a href="https://www.instagram.com/seu_usuario_instagram" target="_blank" rel="noopener noreferrer">Instagram</a> |
-            <a href="https://github.com/Nayaralm" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <p>Siga-nos nas redes sociais: <a href="https://www.instagram.com/nayara.almeiidaa?igsh=MXB4dmN1cDFka3Rxcg==" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram">Instagram</a> |
+            <a href="https://github.com/Nayaralm" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">GitHub</a></p>
     </footer>
 
     <script>
@@ -139,7 +190,17 @@
                 });
             });
         });
+
+        // JavaScript para o efeito de acordeão
+        document.querySelectorAll('.example-title').forEach(title => {
+            title.addEventListener('click', () => {
+                const example = title.parentElement;
+                example.classList.toggle('expanded');
+            });
+        });
     </script>
+
+
 </body>
 
 </html>
