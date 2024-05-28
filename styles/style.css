@@ -88,8 +88,6 @@ body {
     font-size: 1.5rem;
     font-weight: 500;
     color: #f6f6f6;
-    /* margin-top: 16px;
-   margin-bottom: 16px; */
     margin: 16px 0;
 }
 
@@ -195,10 +193,13 @@ body {
 /* Estilos para a seção de Aplicações */
 
 .aplicacoes {
-    padding: 50px 0;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
-    text-align: center;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1%;
 }
 
 .aplicacoes h1 {
@@ -211,6 +212,8 @@ body {
     list-style: none;
     padding: 0;
     text-align: left;
+    color: var(--cor-secundaria);
+    /* Cor das letras */
 }
 
 .aplicacoes .list-about li {
@@ -223,10 +226,13 @@ body {
 /* Estilos para a seção de Projeções */
 
 .projeções {
-    padding: 50px 0;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-primaria);
-    text-align: center;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1%;
 }
 
 .projeções h1 {
@@ -238,9 +244,71 @@ body {
 .projeções .list-about {
     list-style: none;
     padding: 0;
+    text-align: left;
+    color: var(--cor-secundaria);
+    /* Cor das letras */
 }
 
 .projeções .list-about li {
     font-size: 18px;
     margin-bottom: 10px;
+}
+
+
+/* Estilos para a seção de vídeo */
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: var(--cor-primaria);
+}
+
+.video-section .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding-bottom: 56.25%;
+    /* Proporção 16:9 */
+    background-color: var(--cor-secundaria);
+}
+
+.video-section .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Estilos para a seção de Exemplos */
+
+.exemplos {
+    margin: 32px 32px;
+}
+
+.example {
+    margin-bottom: 20px;
+}
+
+.example-title {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.example-content {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+}
+
+
+/* Estilo para o exemplo expandido */
+
+.example.expanded .example-content {
+    display: block;
 }
